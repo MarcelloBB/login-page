@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    color: #303433;
+    font-family: "Mulish", sans-serif;
+    color: #161617;
 }
 
 html
@@ -46,9 +46,8 @@ section
 .title
 {
     font-size: 6rem;
-    letter-spacing: 0.1rem;
+    font-weight: 900;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .line-separator
@@ -65,5 +64,95 @@ section
     text-align: center;
     margin: 1rem 0 3rem;
     line-height: 2.7rem;
-    color: #696969;
+    color: #58585D;
+}
+
+.login-form
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem;
+}
+
+input,
+button.submit
+{
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+}
+
+input
+{
+    width: 100%;
+    padding: 1.4rem 6rem;
+    background-color: #e6e6e6;
+    letter-spacing: 0.05rem;
+}
+
+input ~ i
+{
+    position: absolute;
+    left: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: color 500ms;
+}
+
+input:focus ~ i
+{
+    color: #843bc7;
+}
+
+button.submit
+{
+    cursor: pointer;
+    padding: 1.4rem 6rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #8b33c5, #15a0e1);
+    transition: opacity 500ms;
+}
+
+button.submit:focus
+{
+    border: 0.05rem solid #58585D;
+}
+
+button.submit:hover
+{
+    opacity: 0.9;
+}
+
+@media (max-width: 80rem)
+{
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .illustration
+    {
+        display: none;
+    }
+
 }
