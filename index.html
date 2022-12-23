@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     
     <!-- Icons -->
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,5 +19,30 @@
 </head>
 <body>
     
+    <section class="illustration">
+        <img src="./assets/img/login.svg" alt="login image">
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <h2 class="title">Welcome back</h2>
+            <div class="line-separator"></div>
+            <p class="message">We missed you! Provide your user and password to have access to all our services</p>
+
+            <form action="#" class="login-form">
+                <div class="form-group">
+                    <input type="text" name="user" id="user" placeholder="Username">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <i class="fas fa-lock"></i>
+                </div>
+            </form>
+
+            <button type="submit" class="submit">LogIn</button>
+        </div>
+    </section>
+
 </body>
 </html>
